@@ -1,2 +1,2 @@
 # hacker_rank_exercises
- my exercises in python hackerRank
+ my study notes / exercise solutions for python hackerRank

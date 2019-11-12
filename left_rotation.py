@@ -6,6 +6,10 @@ import random
 import re
 import sys
 
+def list_slicer(list):
+    list = [str(x) for x in list]
+    list = ' '.join(list)
+    return list
 
 
 if __name__ == '__main__':
@@ -17,11 +21,6 @@ if __name__ == '__main__':
 
     a = [1,2,3,4,5]
 
-    diff = n - d
-    b = a[:-diff]
-    b = [str(x) for x in b]
-    b = ' '.join(b)
-    c = a[d:]
-    c = [str(x) for x in c]
-    c = ' '.join(c)
+    b = list_slicer(a[:d-n])
+    c = list_slicer(a[d:])
     print(c,b)
